@@ -1,0 +1,49 @@
+.buyers__container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.5rem;
+}
+
+.buyer__item{
+    background: var(--color-green-light);
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid var(--color-success-variant);
+    transition: var(--transition);
+}
+
+.buyer__item:hover{
+    background: transparent;
+    border-color: var(--color-dark-green);
+}
+
+.buyer__item-Image{
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.buyer__item h3{
+    margin: 1.2rem 0 2rem;
+}
+
+.buyer__item p{
+    color: var(--color-light);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+/* TABLETS */
+@media screen and (max-width: 1024px) {
+    .buyers__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+/* MOBILE PHONES */
+@media screen and (max-width: 600px) {
+    .buyers__container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
